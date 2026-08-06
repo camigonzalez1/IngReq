@@ -26,8 +26,17 @@ a{ color:inherit; text-decoration:none; }
 ul{ list-style:none; }
 
 /* ===== LOGO ===== */
-.logo{ display:flex; align-items:center; }
-.logo-img{ height:44px; width:auto; display:block; }
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-img {
+    max-height: 80px;
+    max-width: 100%;
+    object-fit: contain;
+}
 
 /* ===== HEADER ===== */
 header.top{ border-bottom:1px solid var(--line); background:var(--beige-1); }
