@@ -120,8 +120,12 @@ p.sub.sub-spaced{ margin-bottom:36px; }
 .cal-note{ font-size:12px; color:var(--ink-soft); margin-top:10px; }
 
 /* ===== EJES ===== */
-.ejes{ display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:14px; }
-.eje-card{
+.ejes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  max-width: 900px;
+}.eje-card{
   background:var(--beige-2); padding:26px 22px 22px; border-radius:8px;
   border:1px solid var(--line); border-top:3px solid var(--greige-2);
   transition:transform .18s ease, box-shadow .18s ease, border-top-color .18s ease, background .18s ease;
