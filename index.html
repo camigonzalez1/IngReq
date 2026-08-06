@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ingeniería de Requisitos K3061 — UTN FRBA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <div class="top-row">
+      <div>
+        <span class="eyebrow">K3061 · UTN FRBA · 2C 2026</span>
+        <h1>Ingeniería de Requisitos</h1>
+      </div>
+      <div class="logo">
+        <div class="mark">UTN</div>
+        <div class="word"><b>FRBA</b>Fac. Regional<br>Buenos Aires</div>
+      </div>
+    </div>
+    <nav class="tabbar" id="tabbar">
+      <button class="tabbtn active" data-tab="presentacion">Presentación</button>
+      <button class="tabbtn" data-tab="ejes">Ejes</button>
+      <button class="tabbtn" data-tab="tp">TP Integrador</button>
+      <button class="tabbtn" data-tab="calif">Calificaciones</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== PRESENTACIÓN ===== -->
+  <section class="panel active" id="presentacion">
+
+    <div class="equipo">
+      <div class="persona">
+        <span class="rol">Titular</span>
+        <div class="nombre">Ing. Laura Varela</div>
+        <div class="mail">lauravarela@frba.utn.edu.ar</div>
+      </div>
+      <div class="persona">
+        <span class="rol">Ayudante</span>
+        <div class="nombre">Camila González</div>
+        <div class="mail">camigonzalez@frba.utn.edu.ar</div>
+      </div>
+    </div>
+
+    <p class="pitch">Al finalizar la materia vas a poder comprender un problema de negocio, obtener información de los distintos involucrados y transformarla en requisitos claros, completos y verificables para el desarrollo de un sistema de software.</p>
+
+    <div class="block">
+      <h3>¿Qué competencias vas a desarrollar?</h3>
+      <ul class="simple-list">
+        <li>Analizar un proceso de negocio</li>
+        <li>Identificar stakeholders</li>
+        <li>Elicitar requisitos utilizando distintas técnicas</li>
+        <li>Diferenciar requisitos funcionales y no funcionales</li>
+        <li>Documentar requisitos mediante distintas herramientas</li>
+        <li>Justificar decisiones de análisis</li>
+        <li>Mantener trazabilidad durante el proyecto</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h3>¿Dónde lo vas a usar?</h3>
+      <p class="sub">Estas habilidades son las que utilizan analistas funcionales, product owners, business analysts, consultores funcionales y líderes de proyecto para definir correctamente qué necesita construir un equipo de desarrollo.</p>
+    </div>
+
+    <div class="block">
+      <h3>¿Qué deberías poder hacer al terminar la materia?</h3>
+      <ul class="checklist">
+        <li><span class="check"></span>Entrevistar a un cliente</li>
+        <li><span class="check"></span>Descubrir necesidades que el cliente no expresa explícitamente</li>
+        <li><span class="check"></span>Escribir requisitos funcionales y no funcionales</li>
+        <li><span class="check"></span>Modelar un proceso de negocio</li>
+        <li><span class="check"></span>Elegir la técnica de relevamiento más adecuada</li>
+        <li><span class="check"></span>Defender técnicamente una solución frente a un cliente</li>
+      </ul>
+    </div>
+
+    <div class="logistica">
+      <div class="log-card">
+        <span class="tag">Cuándo</span>
+        <div class="val">Jueves, 19 a 21:30 hs</div>
+      </div>
+      <div class="log-card">
+        <span class="tag">Zoom</span>
+        <div class="val">Link de la clase</div>
+        <a class="btn" href="#">Unirse a la clase ↗</a>
+        <div class="hint">Reemplazar el href por el link fijo del cuatrimestre.</div>
+      </div>
+      <div class="log-card">
+        <span class="tag">Programa de la materia</span>
+        <div class="dropzone">Adjuntar PDF del programa acá</div>
+        <div class="hint">Subir el archivo y enlazarlo desde este botón.</div>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>Calendario del cuatrimestre</h3>
+      <div class="cal-embed">
+        <!-- Reemplazar TU_CALENDAR_ID por el ID público del Google Calendar de la cátedra -->
+        <iframe src="https://calendar.google.com/calendar/embed?src=TU_CALENDAR_ID%40group.calendar.google.com&ctz=America%2FArgentina%2FBuenos_Aires&mode=MONTH&showTitle=0&showTabs=0&showPrint=0&showCalendars=0"
+                width="100%" height="500" frameborder="0" scrolling="no"></iframe>
+      </div>
+      <p class="cal-note">Calendario embebido desde Google Calendar. Editarlo en un solo lugar actualiza esta página automáticamente.</p>
+    </div>
+
+  </section>
+
+  <!-- ===== EJES ===== -->
+  <section class="panel" id="ejes">
+    <span class="section-tag">Contenidos</span>
+    <h2 class="h">Los cinco ejes de la materia</h2>
+    <p class="sub" style="margin-bottom:36px;">El programa se organiza en cinco bloques encadenados: qué es un requisito, cómo se releva, cómo se documenta con casos de uso, y cómo se describe con precisión mediante LEL y escenarios.</p>
+
+    <div class="ejes">
+      <div class="eje-card">
+        <span class="n">01</span>
+        <h3>RF / RNF</h3>
+        <ul>
+          <li>La IR como proceso social</li>
+          <li>Definición de requerimiento y requisito</li>
+          <li>Requisitos funcionales y no funcionales</li>
+          <li>Universo del Discurso</li>
+        </ul>
+        <div class="biblio">SWEBOK v3 — Cap. 1 · Sommerville · Aurum &amp; Wohlin</div>
+      </div>
+
+      <div class="eje-card">
+        <span class="n">02</span>
+        <h3>Elicitación de Requisitos</h3>
+        <ul>
+          <li>Fuentes de información</li>
+          <li>Técnicas de recolección de datos</li>
+          <li>Entrevistas, observación, cuestionarios</li>
+        </ul>
+        <div class="biblio">Whitten — Técnicas de elicitación</div>
+      </div>
+
+      <div class="eje-card">
+        <span class="n">03</span>
+        <h3>Casos de Uso</h3>
+        <ul>
+          <li>Para qué sirven</li>
+          <li>Inclusión, generalización, extensión</li>
+          <li>Actores y herencia entre actores</li>
+          <li>Errores comunes al definirlos</li>
+        </ul>
+        <div class="biblio">Fowler — UML Distilled · Bittner &amp; Spence</div>
+      </div>
+
+      <div class="eje-card">
+        <span class="n">04</span>
+        <h3>LEL</h3>
+        <ul>
+          <li>Definición, símbolos, clasificación</li>
+          <li>Principios de circularidad y vocabulario mínimo</li>
+          <li>Construcción: identificar, clasificar, describir, verificar, validar</li>
+        </ul>
+        <div class="biblio">Kaplan — Inspección del LEL</div>
+      </div>
+
+      <div class="eje-card">
+        <span class="n">05</span>
+        <h3>Escenarios</h3>
+        <ul>
+          <li>Concepto y modelo, relación con el LEL</li>
+          <li>Jerarquías: sub-escenarios y escenarios integradores</li>
+          <li>Manejo de excepciones</li>
+          <li>Escenarios actuales y futuros</li>
+        </ul>
+        <div class="biblio">Hadad — Uso de Escenarios en la Derivación del Software</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TP INTEGRADOR ===== -->
+  <section class="panel" id="tp">
+    <div class="tp-toggle-row">
+      <div>
+        <span class="section-tag">Trabajo práctico cuatrimestral</span>
+        <h2 class="h" style="margin-bottom:0;">TP Integrador</h2>
+      </div>
+      <div class="toggle" id="tp-toggle">
+        <span id="tp-toggle-label">Sección oculta</span>
+        <div class="switch" id="tp-switch"></div>
+      </div>
+    </div>
+
+    <div id="tp-hidden" class="tp-hidden-state">
+      <span class="em">Próximamente</span>
+      <h3>Todavía no está publicado</h3>
+      <p>El enunciado y las etapas del TP integrador se habilitan más adelante en el cuatrimestre. Usá el interruptor de arriba para previsualizarlo.</p>
+    </div>
+
+    <div id="tp-content" style="display:none;">
+      <div class="caso-box">
+        <span class="tag">Caso de estudio</span>
+        <h3>A definir — 2C 2026</h3>
+        <p>Enunciado a confirmar por la cátedra. Estructura de referencia con las etapas típicas del TP integrador, para completar cuando se publique el caso de este cuatrimestre.</p>
+      </div>
+
+      <div class="etapas">
+        <div class="etapa"><span class="step">Etapa 1</span><h4>Stakeholders, usuarios y clientes</h4><p>Identificación de involucrados + preguntas de entrevista.</p><span class="fecha">Fecha a definir</span></div>
+        <div class="etapa"><span class="step">Etapa 2</span><h4>Minuta de la entrevista</h4><p>Registro de la entrevista realizada en clase, por rol.</p><span class="fecha">Fecha a definir</span></div>
+        <div class="etapa"><span class="step">Etapa 3</span><h4>Cuestionario</h4><p>Relevamiento de aceptación de la solución propuesta.</p><span class="fecha">Fecha a definir</span></div>
+        <div class="etapa"><span class="step">Etapa 4</span><h4>Comparación de soluciones</h4><p>Plantilla de comparación de alternativas posibles.</p><span class="fecha">Fecha a definir</span></div>
+        <div class="etapa"><span class="step">Etapa 5</span><h4>Requerimientos funcionales y no funcionales</h4><p>En base al relevamiento ya realizado.</p><span class="fecha">Fecha a definir</span></div>
+        <div class="etapa"><span class="step">Etapa 6</span><h4>Escenario actual</h4><p>Documentación del escenario asignado a cada equipo.</p><span class="fecha">Fecha a definir</span></div>
+        <div class="etapa"><span class="step">Etapa 7</span><h4>LEL del negocio</h4><p>Léxico Extendido del Lenguaje y su jerarquía.</p><span class="fecha">Fecha a definir</span></div>
+        <div class="etapa"><span class="step">Etapa 8</span><h4>Escenario futuro</h4><p>Versión futura, en base a la corrección del actual.</p><span class="fecha">Fecha a definir</span></div>
+        <div class="etapa"><span class="step">Etapa 9</span><h4>Nube de palabras</h4><p>A partir del escenario trabajado por el equipo.</p><span class="fecha">Fecha a definir</span></div>
+        <div class="etapa"><span class="step">Etapa 10</span><h4>Entrega final y presentación</h4><p>Propuesta de soluciones analizadas + una recomendada. Defensa en clase.</p><span class="fecha">Fecha a definir</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CALIFICACIONES ===== -->
+  <section class="panel" id="calif">
+    <span class="section-tag">Evaluación</span>
+    <h2 class="h">Calificaciones</h2>
+
+    <div class="calif-grid">
+      <div class="calif-card">
+        <h3>Formas de evaluación</h3>
+        <ul>
+          <li>Trabajos prácticos semanales</li>
+          <li>2 parciales, cada uno con 2 recuperatorios posibles</li>
+          <li>Se evalúan competencias adquiridas, no solo contenidos</li>
+          <li>Cada punto del parcial se aprueba con un mínimo del 60%</li>
+          <li>Promoción directa con nota 8 (85% del parcial correcto)</li>
+        </ul>
+      </div>
+      <div class="calif-card">
+        <h3>TPs semanales</h3>
+        <ul>
+          <li>Participación escrita: oportunidad y calidad del aporte, vía Google Drive</li>
+          <li>Participación oral en clase: calidad, claridad y oportunidad</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <span>Ingeniería de Requisitos K3061 · UTN Facultad Regional Buenos Aires · 2C 2026</span>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
